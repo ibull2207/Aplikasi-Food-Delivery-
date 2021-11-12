@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/svLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/Logo_kopi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/chef" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:paddingStart="50dp"
+                android:text="Log In"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="170dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/Login"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/SignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="50dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="170dp"
+                android:layout_height="5dp"
+                android:layout_below="@id/SignUp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:background="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="@string/username"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edUsername"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_1"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:hint="@string/password"
+                android:paddingStart="10dp"
+                android:text=""
+                android:background="@drawable/button_1"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/konfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tvKoPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password"
+                android:paddingStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/edKoPassword"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:hint="@string/confirm_password"
+                android:paddingStart="10dp"
+                android:text=""
+                android:background="@drawable/button_1"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_2"
+                app:backgroundTint="#650000"
+                android:text="Sign Up"
+                tools:ignore="hardcodedtext"/>
+
+            <LinearLayout
+                android:id="@+id/koSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN UP"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_red_black"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
