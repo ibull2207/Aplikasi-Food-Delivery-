@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#f6f6f6">
+
+<!--    layout 1   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group_15"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:src="@drawable/ic_group_16"
+            android:layout_gravity="center">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-60px"
+            android:src="@drawable/man"
+            android:layout_gravity="center">
+        </ImageView>
+
+    </LinearLayout>
+
+<!--    layout 2   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_bg_hijau">
+
+<!--        layout 2.1   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="25dp"
+                android:text="The Fastest In"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+<!--            layout 2.1.1   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Delivery"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Food"
+                    android:textColor="#3F0713"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Order Now"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:background="@drawable/ic_button1"
+                app:backgroundTint="#3F0713">
+            </Button>
+
+        </LinearLayout>
+
+<!--        layout 2.2   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:src="@drawable/motor">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    Categori   -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Categories"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+<!--    layout 3   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/burger_logo">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pizza_logo">
+        </ImageView>
+
+    </LinearLayout>
+
+<!--    layout 4   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Popular Now"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="182dp"
+            android:layout_gravity="center"
+            android:text="View all"
+            android:textSize="12dp"
+            android:textColor="#FFB13D"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_group_19">
+        </ImageView>
+
+    </LinearLayout>
+
+<!--    layout 5   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/ic_bg_menu">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/burger1_1_export">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Beef Berger"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chessy Mozarella"
+                android:textAlignment="center"
+                android:textColor="#95989A"
+                android:textSize="10dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="$  6.59"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/ic_bg_menu">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/berger2_1_export">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Double Berger"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Double Beef"
+                android:textAlignment="center"
+                android:textColor="#95989A"
+                android:textSize="10dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="$  7.49"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    Menu & layout 6   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_home_24px">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_favorite_border_24px">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_pencarian">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notifications_none_24px">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_shopping_cart_24px">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
