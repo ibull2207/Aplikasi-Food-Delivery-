@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/wallpaper_atas"
+            android:layout_width="match_parent"
+            android:layout_height="277dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="321dp"
+                android:layout_height="256dp"
+                android:layout_gravity="center"
+                android:src="@drawable/koki" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:text="The Fastest In Delivery Food"
+            android:textColor="@color/brown"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:text="@string/bawah"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="GetStarted"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
